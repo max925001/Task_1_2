@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deep Thought</title>
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="https://deepthought.education/assets/images/logo/logo.svg" alt=""></div>
+        <div class="nav-icons">
+            <span class="icon">⚙️</span>
+            <span class="icon">🔔</span>
+            <span class="icon">📧</span>
+            <span class="icon"><img src="" alt=""></span>
+        </div>
+    </header>
+    
+    <div class="container">
+        <aside class="sidebar collapsed">
+            <div class="user-icon"><i class="fa fa-arrow-right" aria-hidden="true" id="arrow-right"></i>
+                
+            </div>
+            <div class="journey-board">
+                <h3>Journey Board</h3>
+                <ul>
+                    <li>Explore the world of management</li>
+                    <li>Technological Project Management</li>
+                    <li>Threadable</li>
+                    <li>Structure your Poisons</li>
+                    <li>4Ds Method</li>
+                </ul>
+            </div>
+
+        </aside>
+      
+        <main class="content"> 
+            <section><div class="details1"><h2 class="title"></h2>
+            
+            <button>Submit Task</button>
+            
+            </div>
+            <div class="details2"><h3 >Explore the world of management</h3>
+            <p class="task_des"></p></div>
+            
+            
+            </section>
+            <div class="grid-container">
+                <section class="section" id="tech-project-management">
+                    <div class="box-header">
+                       <div class="box-header-section">
+                        <h1 class="project_manager"> </h1>
+                        <span><i class="fa fa-info" aria-hidden="true"></i></span>
+                       </div>
+                        <p>Description: Steps of Explorative Stages of Agility Specific Accountable Stage plus Hie.</p>
+                    </div>
+                    <div class="vedio_data">
+                    
+                    </div>
+                    
+                </section>
+                
+                <section class="section" id="threadable">
+                    
+
+
+                    <div class="header">
+                        <h1 class="Thread_build"></h1>
+                        <span><i class="fa fa-info" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="description">
+                        <p class="thread_des"></p>
+                    </div>
+                    <div class="thread-container">
+                        <div class="thread-header">
+                            <h2>Thread A</h2>
+                        </div>
+                        <div class="sub-thread">
+                            <h3>Sub thread 1</h3>
+                            <textarea rows="3" style="width: 100%;" placeholder="Enter Text here"></textarea>
+                        </div>
+                        <div class="sub-interpretation">
+                            <h3>Sub Interpretation 1</h3>
+                            <textarea rows="3" style="width: 100%;" placeholder="Enter Text here"></textarea>
+                        </div>
+                        <div class="actions">
+                            <div>
+                                <button class="icon-button">💡</button>
+                                <button class="icon-button">💬</button>
+                                <button class="icon-button">❓</button>
+                                <button class="icon-button">⬇️</button>
+                            </div>
+                            <div>
+                                <select>
+                                    <option>Select Categ</option>
+                                </select>
+                                <select>
+                                    <option>Select Proces</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button class="add-sub-thread">+ Sub-thread</button>
+                        <div class="summary">
+                            <h3>Summary for Thread A</h3>
+                            <textarea rows="3" style="width: 100%;" placeholder="Enter Text Here"></textarea>
+                        </div>
+                    </div>
+                </section>
+                
+                <section class="section" id="structure-your-poisons">
+
+
+                    <div class="header">
+                        <h1 class="structure_pointer"></h1>
+                        <span><i class="fa fa-info" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="description">
+                        <p class="structure_pointer_des"></p>
+                    </div>
+                    <div class="content-container">
+                        <div class="section">
+                            <h3>Title</h3>
+                            <input type="text" class="input-field" placeholder="Enter Title Here">
+                        </div>
+                        <div class="section">
+                            <h3>Content</h3>
+                            <div class="toolbar">
+                                <div>
+                                    <button>File</button>
+                                    <button>Edit</button>
+                                    <button>View</button>
+                                    <button>Insert</button>
+                                    <button>Format</button>
+                                    <button>Tools</button>
+                                    <button>Table</button>
+                                    <button>Help</button>
+                                </div>
+                            </div>
+                            <div contenteditable="true" class="editor">
+                                <p>Start writing your content here...</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+                
+                <section class="section" id="4ds-method">
+                  
+
+
+
+                    <div class="header">
+                        <h1 class="sa_method"></h1>
+                        <span><i class="fa fa-info" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="description">
+                        <p class="sa_method_des"></p>
+                    </div>
+                    <div class="content-container">
+                        <div class="section">
+                            <div class="section-header" onclick="toggleSection('introduction-content')">
+                                <h3>Introduction</h3>
+                                <span>▼</span>
+                            </div>
+                            <div class="section-content" id="introduction-content">
+                                <p>The 4SA Method, How to bring an idea into progress?</p>
+                                <span class="see-more" onclick="showMore(event)">See More</span>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section-header" onclick="toggleSection('thread-a-content')">
+                                <h3>Thread A</h3>
+                                <span>▼</span>
+                            </div>
+                            <div class="section-content" id="thread-a-content">
+                                <p>How are you going to develop your strategy? Which method are you going to use to develop a strategy? What if the project is lengthy?</p>
+                                <span class="see-more" onclick="showMore(event)">See More</span>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="section-header" onclick="toggleSection('example-1-content')">
+                                <h3>Example 1</h3>
+                                <span>▼</span>
+                            </div>
+                            <div class="section-content" id="example-1-content">
+                                <p>You have a concept, How will you put into progress?</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+            </div>
+        </main>
+        <div class="notice">
+            <div class="logo_notice">
+            <i class="fa fa-times" aria-hidden="true"></i>
+            <h3>N</h3>
+            <h3>o</h3>
+            <h3>t</h3>
+            <h3>i</h3>
+            <h3>c</h3>
+            <h3>e</h3>
+            <br>
+            
+            <h3>B</h3>
+            <h3>o</h3>
+            <h3>a</h3>
+            <h3>r</h3>
+            <h3>d</h3>
+
+            
+        </div></div>
+    </div>
+    
+    <footer>
+        <div class="footer-icons">
+            <span class="icon">❓</span>
+            <span class="icon">📅</span>
+            <span class="icon">🔍</span>
+        </div>
+    </footer>
+    
+   <script src="./script.js"></script>
+</body>
+</html>
